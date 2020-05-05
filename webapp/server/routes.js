@@ -251,10 +251,11 @@ async function getTopReviewers(req, res) {
 async function getReviewerTime(req, res) {
   var inputName = req.params.reviewer;
   var query = `
-    SELECT RE.Name, SUM(R.time) AS totalTime
-    FROM Review R JOIN Reviewer RE ON R.reviewerID = RE.reviewerID
-    WHERE RE.Name = '` + inputName + `'
-    GROUP BY RE.Name
+    SELECT * FROM(
+    SELECT P.title AS productName, R.Overall AS rating, R.reviewText AS review, R.time AS time
+    FROM Review R JOIN Product P ON R.Asin = P.Asin JOIN Reviewer RE ON R.reviewerID = RE.reviewerID
+    WHERE RE.name = '` + inputName + `'
+    ORDER BY R.time DESC, P.title) WHERE rownum <= 10
   `;
   try {
     console.log("Successfully connected to Oracle!")

@@ -37,7 +37,7 @@ export default class ReviewerTime extends React.Component {
 	// Hint: Name of movie submitted is contained in `this.state.movieName`.
 	submitProduct() {
 		// Send an HTTP request to the server.
-    fetch("http://localhost:8081/time%20spent%20writing/"+ this.state.productName,
+    fetch("http://localhost:8081/Get%20most%20recent%20reviews/"+ this.state.productName,
     {
       method: 'GET' // The type of HTTP request.
     }).then(res => {
@@ -53,8 +53,9 @@ export default class ReviewerTime extends React.Component {
       // A button which triggers the showMovies function for each genre.
       let recDivs = recList.map((recObj, i) =>
       	<tr>
-			<td>{recObj.NAME}</td>
-			<td>{recObj.TOTALTIME}</td>
+			<td>{recObj.PRODUCTNAME}</td>
+			<td>{recObj.RATING}</td>
+			<td>{recObj.REVIEW}</td>
 	  	</tr>
       );
 
@@ -90,8 +91,9 @@ export default class ReviewerTime extends React.Component {
 						<table class="table table-striped">
 							<thead>
 							<tr>
-								<th>Name</th>
-								<th>Total Time spent on Reviews (seconds)</th>
+								<th>Product Name</th>
+								<th>Rating</th>
+								<th>Review</th>
 							</tr>
 							</thead>
 							<tbody>

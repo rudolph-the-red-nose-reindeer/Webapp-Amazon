@@ -117,7 +117,7 @@ export default class App extends React.Component {
 
 						<Route
 							exact
-							path="/Time spent writing"
+							path="/Get most recent reviews"
 							render={() => (
 								<ReviewerTime />
 							)}

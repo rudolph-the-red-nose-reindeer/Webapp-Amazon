@@ -11,7 +11,7 @@ function Dropdown({ title, multiSelect = false }) {
   const items = [
   	{id: 1, value:'Product stats'},{id:2, value:'Top products in a brand' },{id: 3, value:'Most reviewed brands' },
   	{id: 4, value:'Most expensive products per brand'},{id: 5, value:'Average rating and price in a brand'},
-  	{id: 6, value:'Get related products'}, {id: 7, value: 'Get product labels'},
+  	,
   ];
   Dropdown.handleClickOutside = () => setOpen(false);
 

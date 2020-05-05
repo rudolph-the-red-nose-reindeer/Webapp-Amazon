@@ -6,7 +6,7 @@ function Dropdown1({ title, multiSelect = false }) {
  const [selection, setSelection] = useState([]);
  const toggle = () => setOpen(!open);
  const itemz = [
- 	{id: 1, value:'Get top reviewers'},{id:2, value:'time spent writing' },{id: 3, value:'Top products a reviewer has reviewed' },
+ 	{id: 1, value:'Get top reviewers'},{id:2, value:'Get most recent reviews' },{id: 3, value:'Top products a reviewer has reviewed' },
  ];
  Dropdown1.handleClickOutside = () => setOpen(false);
 

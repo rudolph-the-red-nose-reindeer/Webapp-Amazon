@@ -55,7 +55,6 @@ export default class TopReviewsByReviewer extends React.Component {
 			<td>{recObj.PRODUCTNAME}</td>
 			<td>{recObj.RATING}</td>
 			<td>{recObj.REVIEW}</td>
-			<td>{recObj.TIME}</td>
 	  	</tr>
       );
 
@@ -94,7 +93,6 @@ export default class TopReviewsByReviewer extends React.Component {
 								<th>Product Name</th>
 								<th>Rating</th>
 								<th>Review</th>
-								<th>Time</th>
 							</tr>
 							</thead>
 							<tbody>

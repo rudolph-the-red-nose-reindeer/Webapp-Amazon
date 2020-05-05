@@ -39,7 +39,7 @@ app.get('/Get%20related%20products/:title/:relation', routes.getRelated);
 //app.get('/reviewers', routes.getTopReviewers);
 app.get('/reviewers/:reviewer', routes.getReviewerStats);
 app.get('/Get%20top%20reviewers', routes.getTopReviewers);
-app.get('/time%20spent%20writing/:reviewer', routes.getReviewerTime);
+app.get('/Get%20most%20recent%20reviews/:reviewer', routes.getReviewerTime);
 app.get('/Top%20products%20a%20reviewer%20has%20reviewed/:reviewer', routes.getTopReviewsByReviewer);
 
 /* ---- (Reviews) ---- */
