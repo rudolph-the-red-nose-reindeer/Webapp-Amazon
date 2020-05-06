@@ -44,6 +44,7 @@ app.get('/Top%20products%20a%20reviewer%20has%20reviewed/:reviewer', routes.getT
 
 /* ---- (Reviews) ---- */
 app.get('/reviews/:title', routes.getLongestReviews);
+app.get('/Get%20products%20with%20no%20review', routes.getUnreviewedProducts);
 //app.get('/reviews', routes.getNewestReviews);
 
 app.get('/products/:info', routes.getProductInfo);

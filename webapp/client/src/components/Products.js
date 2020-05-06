@@ -54,12 +54,8 @@ export default class Products extends React.Component {
       // A button which triggers the showMovies function for each genre.
       let recDivs = recList.map((recObj, i) =>
       	<tr>
-			<td>{recObj.NAME}</td>
 			<td>{recObj.DESCRIPTION}</td>
 			<td>{recObj.BRAND}</td>
-			<td>{recObj.REVIEWTEXT}</td>
-			<td>{recObj.OVERALL}</td>
-			<td>{recObj.REVIEWDATE}</td>
 	  	</tr> 
       );
 
@@ -98,12 +94,8 @@ export default class Products extends React.Component {
 							<table class="table table-striped">
 								<thead>
 								<tr>
-									<th>Name</th>
 									<th>Description</th>
 									<th>Brand</th>
-									<th>Review</th>
-									<th>Rating</th>
-									<th>Date</th>
 								</tr>
 								</thead>
 								<tbody>

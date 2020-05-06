@@ -20,6 +20,7 @@ import TopReviewsByReviewer from './TopReviewsByReviewer'
 import BrandStats from './BrandStats'
 import ReviewerTime from './ReviewerTime'
 import ProductsLabels from './ProductsLabels'
+import NoReview from './NoReview'
 
 
 
@@ -120,6 +121,14 @@ export default class App extends React.Component {
 							path="/Get most recent reviews"
 							render={() => (
 								<ReviewerTime />
+							)}
+						/>
+
+						<Route
+							exact
+							path="/Get products with no review"
+							render={() => (
+								<NoReview />
 							)}
 						/>
 

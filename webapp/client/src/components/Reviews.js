@@ -2,6 +2,7 @@ import React from 'react';
 import PageNavbar from './PageNavbar';
 import '../style/Reviews.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Dropdown2 from './Dropdown2';
 
 export default class Reviews extends React.Component {
 	constructor(props) {
@@ -85,7 +86,7 @@ export default class Reviews extends React.Component {
 			    		</div>
 			    		<div class="container">
 						<h2>These are the best reviews</h2>
-
+						<div className="h6">Or <Dropdown2 title="Other review information" /> </div>
 						<table class="table table-striped">
 							<thead>
 							<tr>
